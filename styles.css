@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: #eef3ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 1.5rem;
+  background: #14203a;
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  color: #61dafb;
+}
+h2 {
+  margin: 1.5rem 0 1rem;
+  font-size: 1.5rem;
+  color: #61dafb;
+}
+.timer-card {
+  padding: 1.5rem;
+  background: #0f172a;
+  border-radius: 18px;
+}
+
+.time-display {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #61dafb;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem 0.8rem;
+  background: #1d3a5a;
+  color: #eef3ff;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.laps-section {
+  margin-top: 1.5rem;
+}
+
+.laps-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lap-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 14px;
+  background: #16233f;
+}
+
+@media (max-width: 480px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+}
